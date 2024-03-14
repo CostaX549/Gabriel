@@ -21,7 +21,7 @@
     <body class="font-sans antialiased">
         @inertia
     </body>
-
+    
     <script src="{{ asset('/sw.js') }}"></script>
 <script>
    if ("serviceWorker" in navigator) {

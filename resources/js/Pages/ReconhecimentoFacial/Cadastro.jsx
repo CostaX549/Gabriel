@@ -170,12 +170,12 @@ export default function Reconhecer({ auth,successMessage, errors }) {
                                             return novosDias;
                                         })}  />} label={dia} />
                                   
-    <div className="flex gap-2">     
+    <div className="flex  flex-wrap justify-center gap-x-3 gap-y-4 py-2">     
 
     
 <TimePicker
            
-          label="With Time Clock"
+          label="Horário Inicial"
           value = {dayjs.utc(horariosIniciais[index])}
           onChange={(value) => setHorariosIniciais(prevHorariosIniciais => {
               const novosHorariosIniciais = [...prevHorariosIniciais];
@@ -195,7 +195,7 @@ export default function Reconhecer({ auth,successMessage, errors }) {
         />
 
 <TimePicker
-          label="With Time Clock"
+          label="Horário FInal"
           value = {dayjs.utc(horariosFinais[index])}
           onChange={(value) => setHorariosFinais(prevHorariosFinais => {
               const novosHorariosFinais = [...prevHorariosFinais];
@@ -213,11 +213,11 @@ export default function Reconhecer({ auth,successMessage, errors }) {
           }}
         />
       
-                                    <h2 className="font-bold">Intervalo:</h2>
+                                 {/*    <h2 className="font-bold">Intervalo:</h2> */}
                                 
                             
 <TimePicker
-          label="With Time Clock"
+          label="Intervalo Inicial"
           value = {dayjs.utc(intervaloInicial[index])}
           onChange={(value) => setIntervaloInicial(prevIntervaloInicial => {
             const novoIntervaloInicial = [...prevIntervaloInicial];
@@ -236,7 +236,7 @@ export default function Reconhecer({ auth,successMessage, errors }) {
         />
 
 <TimePicker
-          label="With Time Clock"
+          label="Intervalo Final"
           value = {dayjs.utc(intervaloFinal[index])}
           onChange={(value) => setIntervaloFinal(prevIntervaloFinal => {
               const novoIntervaloFinal = [...prevIntervaloFinal];

@@ -28,8 +28,8 @@ class ReconhecimentoController extends Controller
             'version' => 'latest',
             'region'  => 'us-east-1',
             'credentials' => [
-                'key'    => 'AKIAZLKD2YMLRI7QUEET',
-                'secret' => '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',
+                'key'    => env('AWS_ACCESS_KEY_ID'),
+                'secret' => env('AWS_SECRET_ACCESS_KEY'),
             ],
         ]);
 
