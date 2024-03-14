@@ -29,7 +29,7 @@ class ReconhecimentoController extends Controller
             'region'  => 'us-east-1',
             'credentials' => [
                 'key'    => 'AKIAZLKD2YMLRI7QUEET',
-                'secret' => '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',
+                'secret' => '',
             ],
         ]);
 
